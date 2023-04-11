@@ -1,6 +1,30 @@
 [
     {
-        "nome": "",
-        "cor": "",
+        "nome": "Banshee",
+        "cor":"marr om"
+    },
+    {
+        "nome": "Cão do inferno",
+        "cor": "vermelho"
+    },
+    {
+        "nome": "Coiote",
+        "cor": "azul"
+    },
+    {
+        "nome": "Kanima",
+        "cor": "verde"
+    },
+    {
+        "nome": "Kitsune",
+        "cor": "laranja"
+    },
+    {
+        "nome": "Lobisomen",
+        "cor": "dourado"
+    },
+    {
+        "nome": "Naguar",
+        "cor": "verde escuro"
     }
 ]
