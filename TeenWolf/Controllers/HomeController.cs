@@ -1,24 +1,35 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using TeenWolf.Models;
+using TeenWolf.Services;
 
 namespace TeenWolf.Controllers;
 
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private readonly IWolfService _wolfservices;
 
     public HomeController(ILogger<HomeController> logger)
     {
         _logger = logger;
+        _wolfservices = wolfservices;
     }
 
-    public IActionResult Index()
+    public IActionResult Index(string tipo)
     {
-        return View();
+        var Wolf = _wolfservices.GetTeenWolfDto();
+        ViewData["filter"] = string.IsNullOrEmpty(tipo) ? "all" : tipo;
+        return View(Dto);
     }
 
-    public IActionResult Privacy()
+    public IActionResult Details(int numero)
+    {
+        var TeenWolf = _wolfservices.GetDetailedTeenWolf();
+        return View(TeenWolf);
+    }
+
+        public IActionResult = Privacy()
     {
         return View();
     }
