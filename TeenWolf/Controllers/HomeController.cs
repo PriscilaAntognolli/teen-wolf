@@ -6,30 +6,26 @@ using TeenWolf.Services;
 namespace TeenWolf.Controllers;
 
 public class HomeController : Controller
-{
+    {
     private readonly ILogger<HomeController> _logger;
-    private readonly IWolfService _wolfservices;
-
-    public HomeController(ILogger<HomeController> logger)
+    private readonly IWolfService _wolfService;
+    public HomeController(ILogger<HomeController> logger, IWolfService wolfService)
     {
         _logger = logger;
-        _wolfservices = wolfservices;
+        _wolfService = wolfService;
     }
-
     public IActionResult Index(string tipo)
     {
-        var Wolf = _wolfservices.GetTeenWolfDto();
+        var wolfs = _wolfService.GetTeenWolfDto();
         ViewData["filter"] = string.IsNullOrEmpty(tipo) ? "all" : tipo;
-        return View(Dto);
+        return View(wolfs);
     }
-
-    public IActionResult Details(int numero)
+    public IActionResult Details(int Numero)
     {
-        var TeenWolf = _wolfservices.GetDetailedTeenWolf();
-        return View(TeenWolf);
+        var personagem = _wolfService.GetDetailedPersonagem(Numero);
+        return View(personagem);
     }
-
-        public IActionResult = Privacy()
+    public IActionResult Privacy()
     {
         return View();
     }
@@ -37,6 +33,7 @@ public class HomeController : Controller
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        return View(new ErrorViewModel { RequestId = Activity.Current?.Id
+                    ?? HttpContext.TraceIdentifier });
     }
 }

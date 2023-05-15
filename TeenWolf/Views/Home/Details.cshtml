@@ -1,0 +1,46 @@
+@model DetailsDto
+@inject TeenWolf.Services.IWolfService service
+
+@{
+    ViewData["Title"] = "Personagem";
+}
+
+<section class="pt-5 container">
+    <div class="row">
+        <div class="col text-center">
+            @if (Model.Prior != null)
+            {
+                <a asp-action="Details" asp-route-Numero="@Model.Prior.Numero" class="btn btn-lg btn-outline-dark">
+                    @Model.Prior.Numero.ToString("000") - @Model.Prior.Nome
+                </a>
+            }
+        </div>
+        <div class="col text-center">
+            <h1 class="fs-1">@Model.Current.Nome <span class="fs-2 text-secondary">Nº @Model.Current.Numero.ToString("000")</span></h1>
+        </div>
+        <div class="col text-center">
+            @if (Model.Next != null)
+            {
+                <a asp-action="Details" asp-route-Numero="@Model.Next.Numero" class="btn btnlg btn-outline-dark">
+                    @Model.Next.Numero.ToString("000") - @Model.Next.Nome
+                </a>
+            }
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-lg-5 p-0">
+            <img class="img-fluid cursor-pointer" src="@Model.Current.Imagem"alt="@Model.Current.Nome">
+        </div>
+        <div class="col-lg-7 fs-5 mt-4">
+            <p class="mb-3"><strong>Descrição:</strong> @Model.Current.Descricao</p>
+            <p class="fw-bold">Tipo</p>
+            <div class="btn-group">
+                @foreach (var tipo in Model.Current.Tipo)
+                {
+                    <a asp-action="Index" asp-route-tipo="@tipo.ToLower()" class="btn btn-lg text-white" style="background-color:@service.GetTipo(tipo).Cor">@tipo</a>
+                }
+            </div>
+        </div>
+    </div>
+</section>

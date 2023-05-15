@@ -2,50 +2,50 @@
     {
         "Numero": 1,
         "Nome": "Lydia Martin",
-        "tipo": "Banshee",
-        "Descrição": "Grito super moderoso, com capacidade de matar alguem e tem previsões de morte futura",
+        "Tipo": ["Banshee"],
+        "Descricao": "Grito super moderoso, com capacidade de matar alguem e tem previsões de morte futura",
         "img": ""
     },
     {
         "Numero": 2,
         "Nome": "Parrish Cerberus",
-        "tipo": "Cão do Inferno",
-        "Descrição": "Mensageiro da morte e com força insana e imune a venenos e seu corpo pega fogo ao se transformar",
+        "Tipo": ["Cão do Inferno"],
+        "Descricao": "Mensageiro da morte e com força insana e imune a venenos e seu corpo pega fogo ao se transformar",
         "img": ""
     },
     {
         "Numero": 3,
         "Nome": "Malia Hale",
-        "tipo": "Coiote",
-        "Descrição": "São seres noturnos, fica mais forte na lua cheia e são mais rapidos",
+        "Tipo": ["Coiote"],
+        "Descricao": "São seres noturnos, fica mais forte na lua cheia e são mais rapidos",
         "img": ""
     },
     {
         "Numero": 4,
         "Nome": "jackson",
-        "tipo": "Kanima",
-        "Descrição": "Uma especie de metamorfo que solta um veneno podero capaz de te paralisar",
+        "Tipo": ["Kanima"],
+        "Descricao": "Uma especie de metamorfo que solta um veneno podero capaz de te paralisar",
         "img": ""
     },
     {
         "Numero": 5,
         "Nome": "Kira Yukimura",
-        "tipo": "Kitsune",
-        "Descrição": "Especie de Raposa Japonesa, com habilidades com espadas, tem semi imortalidade e capaz de invocar Oni e Nogitsune",
+        "Tipo": ["Kitsune"],
+        "Descricao": "Especie de Raposa Japonesa, com habilidades com espadas, tem semi imortalidade e capaz de invocar Oni e Nogitsune",
         "img": ""
     },
     {
         "Numero": 6,
         "Nome": "Scott McCall",
-        "tipo": "Lobisomen (Alfa)",
-        "Descrição": "Hibridos com ligação a lua, são selvagens na lua cheia e tem sua propria alcateia",
+        "Tipo": ["Lobisomen"],
+        "Descricao": "Hibridos com ligação a lua, são selvagens na lua cheia e tem sua propria alcateia",
         "img": ""
     },
     {
         "Numero": 7,
         "Nome": "Kate Argent",
-        "tipo": "Naguar",
-        "Descrição": "metamorfos e com ligação a lua cheia",
+        "Tipo": ["Naguar"],
+        "Descricao": "metamorfos e com ligação a lua cheia",
         "img": ""
     }
 

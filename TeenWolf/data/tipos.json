@@ -1,30 +1,30 @@
 [
     {
-        "nome": "Banshee",
-        "cor":"marr om"
+        "Nome": "Banshee",
+        "Cor":"#ad6d4d"
     },
     {
-        "nome": "Cão do inferno",
-        "cor": "vermelho"
+        "Nome": "Cão do Inferno",
+        "Cor": "#f9a"
     },
     {
-        "nome": "Coiote",
-        "cor": "azul"
+        "Nome": "Coiote",
+        "Cor": "#3cd328"
     },
     {
-        "nome": "Kanima",
-        "cor": "verde"
+        "Nome": "Kanima",
+        "Cor": "#eb2317"
     },
     {
-        "nome": "Kitsune",
-        "cor": "laranja"
+        "Nome": "Kitsune",
+        "Cor": "#754"
     },
     {
-        "nome": "Lobisomen",
-        "cor": "dourado"
+        "Nome": "Lobisomen",
+        "Cor": "#fc3"
     },
     {
-        "nome": "Naguar",
-        "cor": "verde escuro"
+        "Nome": "Naguar",
+        "Cor": "#bc6a10"
     }
 ]
